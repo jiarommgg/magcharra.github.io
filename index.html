@@ -65,51 +65,36 @@
    width: 94%;
  }
 
+@keyframes animation {
+  0%   {background-color:blue}
+  50%  {background-color:purple}
+  100% {background-color:blue}
+}
+  
  .topnav {
    overflow: hidden;
-   background-color: #000000;
+   background-color: blue;
+   animation-name: animation;
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
  }
-
- .topnav a {
-   float: left;
-   color: #f2f2f2;
-   text-align: center;
-   padding: 14px 20px;
-   text-decoration: none;
-   font-size: 16px;
- }
-
-@keyframes mymove {
-  0%   {color: blue;}
-  50%  {color: purple;}
-  100% {color: blue;}
-}
   
  .topnav p {
    text-align: center;
    text-decoration: none;
-   font-size: 16px;
+   font-size: 24px;
    color: #ffffff;
-   animation: mymove 20s infinite;
+    font-weight: bold;
  }
- 
+  
  body {
    background-color: #000000;
  }
-  
- .topnav a.active {
-   background-color: #222222;
- }
-
  </style>
  <body>
 
  <div class="topnav">
-   <a class="active" href="https://magcharra.github.io">Home</a>
-   <a href="war">Declare War</a>
-   <a href="independence">Declare Independence</a>
-   <a href="register">Register Nation</a>
-   <div><p>MAG CHARRA</p></div>
+   <p>MAG CHARRA</p>
  </div>
 
  <div class="container">
